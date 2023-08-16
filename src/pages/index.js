@@ -8,20 +8,20 @@ import {StyleSheet, css} from 'aphrodite';
 import projects from "../data/projects";
 
 class HomePage extends PureComponent {
-    render () {
-        return (
-            <DefaultLayout>
-                <h1 className={css(styles.header)}><Typography use={"headline3"}>Work</Typography></h1>
-                <Projects projects={projects}/>
-            </DefaultLayout>
-        );
-    }
+  render () {
+    return (
+      <DefaultLayout>
+        <h1 className={css(styles.header)}><Typography use={"headline3"}>Work</Typography></h1>
+        <Projects projects={projects}/>
+      </DefaultLayout>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    header: {
-        padding: "2rem"
-    }
+  header: {
+    padding: "2rem"
+  }
 });
 
 export default HomePage;
