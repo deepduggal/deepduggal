@@ -1,3 +1,10 @@
+Deep Duggal's Personal Website
+- About Me
+- Projects I've Made
+- Code
+- Links & Social Profiles (LinkedIn, Github)
+- Resume
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
