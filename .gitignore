@@ -6,9 +6,6 @@
 # testing
 /coverage
 
-# production. No need to push /build by accident since I build to /build, then rename to /docs.
-/build
-
 # misc
 .DS_Store
 .env.local
