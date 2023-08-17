@@ -13,7 +13,7 @@ function Navbar({navLinks}) {
         &nbsp;&nbsp;
         <SocialIcon url="https://github.com/deepduggal" />
         &nbsp;&nbsp;
-        <SocialIcon url="https://twitter.com/jaketrent" />
+        <SocialIcon url="https://twitter.com/DeepDuggalDev" />
       </div>
       {/*<div className={css(styles.links)}>*/}
         {/*{navLinks.map(({name, to}) => {*/}

@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet } from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite';
 
 export default function VideoBackground({src, alt, poster="", children}) {
   return (
-    <div style={styles.container}>
-      <video style={styles.video} playsInline autoPlay muted="muted" loop="loop" poster={poster}>
+    <div className={css(styles.container)}>
+      <video className={css(styles.video)} playsInline autoPlay muted="muted" loop="loop" poster={poster}>
         <source src={src} alt={alt} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
-      <div style={styles.content}>
+      <div className={css(styles.content)}>
         {children}
       </div>
     </div>
@@ -21,11 +21,10 @@ const styles = StyleSheet.create({
     height: "100vh",
     width: "100vw",
     overflow: 'hidden',
-    maxWidth: "100%",
-    textAlign: "center",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
+    // textAlign: "center",
+    // display: "flex",
+    // alignItems: "center",
+    // justifyContent: "center"
   },
   video: {
     position: 'absolute',
@@ -34,7 +33,10 @@ const styles = StyleSheet.create({
     height: "100%",
     width: "100%",
     zIndex: -1,
+    // display: 'block',
+    // margin: 'auto',
     objectFit: 'cover',
+    objectPosition: 'center'
   },
   content: {
     position: "absolute",
