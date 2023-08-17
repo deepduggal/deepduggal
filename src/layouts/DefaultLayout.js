@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navigation/Navbar';
 // import Footer from '../components/Footer';
 
 // Data
