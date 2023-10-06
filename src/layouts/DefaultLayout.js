@@ -6,28 +6,30 @@ import Navbar from '../components/Navigation/Navbar';
 // Data
 import navLinks from "../data/routes";
 
-function DefaultLayout({children}) {
+function DefaultLayout({ children }) {
   return (
     <div className={"animated fadeIn " + css(styles.defaultLayout)}>
-        <Navbar navLinks={navLinks}/>
-        <main className={css(styles.main)}>
-            {children}
-        </main>
-        {/*<Footer/>*/}
+      {/* Navigation (& Logo) */}
+      <Navbar navLinks={navLinks} />
+      <main className={css(styles.main)}>
+        {children}
+      </main>
+      {/*<Footer/>*/}
     </div>
   );
 }
 
 const styles = StyleSheet.create({
-    defaultLayout: {
-        position: "relative",
-        height: "100%",
-        width: "100%"
-    },
-    main: {
-        height: "100%",
-        width: "100%"
-    }
+  defaultLayout: {
+    position: "relative",
+    height: "100%",
+    width: "100%",
+    // padding: "2rem"
+  },
+  main: {
+    height: "100%",
+    width: "100%"
+  }
 });
 
 export default DefaultLayout;
