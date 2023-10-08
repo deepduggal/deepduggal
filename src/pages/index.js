@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React/*, { useEffect }*/ from 'react';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
