@@ -3,10 +3,13 @@
 
 oldBuildDir="docs/"
 newBuildDir="build/"
+publicDir="public/"
 
-## Add existing things to build
+## Add some existing files to build directory
 # Copy CNAME file to build directory
 cp ${oldBuildDir}CNAME ${newBuildDir}
+# Copy index.html
+cp ${publicDir}index.html ${newBuildDir}
 
 ## Replace old build with new build
 # Delete old build directory
