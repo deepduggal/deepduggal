@@ -1,6 +1,6 @@
 {
-  "short_name": "Deep's Portfolio",
-  "name": "Deep Duggal's Portfolio",
+  "short_name": "Deep's Site",
+  "name": "Deep Duggal's Website",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -18,7 +18,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#fca311",
   "background_color": "#14213d"
