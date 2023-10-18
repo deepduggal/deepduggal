@@ -1,18 +1,18 @@
-import React/*, { useEffect }*/ from 'react';
-import DefaultLayout from '../layouts/DefaultLayout';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import { Typography } from 'rmwc/Typography';
+import React/*, { useEffect } */ from 'react'
+import DefaultLayout from '../layouts/DefaultLayout'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import { Typography } from 'rmwc/Typography'
 
-import { StyleSheet, css } from 'aphrodite';
-import VideoBackground from '../components/Home/VideoBackground';
-import TwitterTimeline from '../components/TwitterTimeline';
+import { StyleSheet, css } from 'aphrodite'
+import VideoBackground from '../components/Home/VideoBackground'
+import TwitterTimeline from '../components/TwitterTimeline'
 
-import projects from "../data/projects";
+import projects from '../data/projects'
 // import gsap from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-function HomePage() {
+function HomePage () {
   // useEffect(() => {
   //   ScrollTrigger.create({
   //     trigger: "#homePage",
@@ -75,7 +75,7 @@ function HomePage() {
 
       {/* Projects Section */}
       <section id="#projects">
-        <h1 className={css(styles.header)}><Typography use={"headline3"}>Work</Typography></h1>
+        <h1 className={css(styles.header)}><Typography use={'headline3'}>Work</Typography></h1>
         <Projects projects={projects} />
       </section>
 
@@ -84,13 +84,13 @@ function HomePage() {
         <TwitterTimeline />
       </section>
     </DefaultLayout>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   header: {
-    padding: "2rem"
+    padding: '2rem'
   }
-});
+})
 
-export default HomePage;
+export default HomePage
