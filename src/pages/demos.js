@@ -1,7 +1,7 @@
 import React from 'react'
 import CodepenEmbed from '../components/CodepenEmbed'
 import { StyleSheet, css } from 'aphrodite'
-import { Typography } from 'rmwc'
+import { Typography } from '@rmwc/typography'
 import DefaultLayout from '../layouts/DefaultLayout'
 
 // TODO: Move. Need a place for reusable styles
@@ -12,7 +12,7 @@ const mediaQueries = {
 }
 
 // TODO: Pass down styles (as className={css(styles.demo)}) from demos page to <CodepenEmbed>
-function DemosPage () {
+function DemosPage() {
   return (
     <DefaultLayout>
       <Typography tag="h1" use="headline1">Demos</Typography>

@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useRef } from 'react'
 import { StyleSheet, css } from 'aphrodite'
-import { Elevation } from 'rmwc/Elevation'
+import { Elevation } from '@rmwc/elevation'
 import gsap from 'gsap'
 
 import PropTypes from 'prop-types'

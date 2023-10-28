@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
-import { Typography } from 'rmwc/Typography'
+import { Typography } from '@rmwc/typography'
 
-function Landing () {
+function Landing() {
   return (
     <section className={css(styles.landing)}>
       <Typography use="headline5">Full-Stack Developer</Typography>

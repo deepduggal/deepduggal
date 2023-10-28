@@ -1,14 +1,14 @@
 import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
-import { Typography } from 'rmwc/Typography'
+import { Typography } from '@rmwc/typography'
 
 import PropTypes from 'prop-types'
 
-function Logo ({ href = '#' }) {
+function Logo({ href = '#' }) {
   return (
     <a href={href} className={css(styles.logo)}>
       <Typography use="headline3">Deep Duggal</Typography>
-      <br/>
+      <br />
       <Typography use="headline5">Front End Engineer</Typography>
     </a>
   )

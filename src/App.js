@@ -1,9 +1,5 @@
 import React from 'react';
 
-// Material
-import '@material/typography/dist/mdc.typography.min.css';
-import '@material/elevation/dist/mdc.elevation.css';
-
 // GSAP
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
