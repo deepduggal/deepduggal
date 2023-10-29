@@ -1,5 +1,6 @@
 {
-  "name": "https://deepduggal.com",
+  "homepage": "https://deepduggal.com",
+  "name": "deepduggal.com",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -17,12 +18,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "gh-help": "gh-pages --help",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b production-deployment -d build"
   },
   "eslintConfig": {
     "extends": [

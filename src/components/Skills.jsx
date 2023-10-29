@@ -6,7 +6,7 @@ const skillsData = ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Expo', 
 function Skills() {
   return (
     <ChipSet>
-      {skillsData.map(label => <Chip key={label} label={label}>{label}</Chip>)}
+      {skillsData.map(label => <Chip key={label} label={label}></Chip>)}
     </ChipSet>
   );
 }
