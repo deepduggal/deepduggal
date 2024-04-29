@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 
 import VideoBackground from "../components/Home/VideoBackground";
 import TwitterTimeline from "../components/TwitterTimeline";
+import Hero from "../components/hurry-up/hero";
 
 import projects from "../data/projects";
 
@@ -66,17 +67,23 @@ function HomePage() {
 
   return (
     <DefaultLayout>
+      <Hero />
       {/* Intro Section */}
       {/* Overflow hidden. Quick fix for <VideoBackground> overflowing */}
-      <section id="intro" className={css(styles.section)}>
+      {/* <section id="intro" className={css(styles.section)}>
         <VideoBackground src="/assets/videos/abstract-wireframe.mp4">
-          {/* <Typography tag="div" use={"headline3"}>I make Websites & Apps.</Typography>
-          <Typography tag="div" use={"headline5"}>More below.</Typography> */}
         </VideoBackground>
-      </section>
+      </section> */}
 
       {/* Skills section */}
       <section id="#skills" className={css(styles.section)}>
+        <Typography
+            use="headline3"
+            tag="h1"
+            className={css(styles.sectionHeader)}
+          >
+            Skills
+        </Typography>
         <Skills />
       </section>
 
@@ -85,7 +92,7 @@ function HomePage() {
         <Typography
           use="headline3"
           tag="h1"
-          className={css(styles.projectsHeader)}
+          className={css(styles.sectionHeader)}
         >
           Work
         </Typography>
@@ -93,15 +100,15 @@ function HomePage() {
       </section>
 
       {/* Twitter Section */}
-      <section id="#twitter" className={css(styles.section)}>
+      {/* <section id="#twitter" className={css(styles.section)}>
         <TwitterTimeline />
-      </section>
+      </section> */}
     </DefaultLayout>
   );
 }
 
 const styles = StyleSheet.create({
-  projectsHeader: {
+  sectionHeader: {
     margin: "0 1rem", // Adjusted projects header for border-radius of projects
     marginBottom: "2rem", // For section headers (not just projects header, but that was the only one when I styled it)
   },

@@ -4,9 +4,6 @@ import React from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// App
-import './App.css';
-
 // Pages
 import HomePage from './pages/index.js';
 // import DemosPage from './pages/demos';
@@ -15,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full h-full">
       {/* <DemosPage /> */}
       <HomePage />
     </div>
