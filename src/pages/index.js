@@ -1,15 +1,18 @@
 import React /* , { useEffect } */ from "react";
-import { Typography } from "@rmwc/typography";
 import { StyleSheet, css } from "aphrodite";
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultTemplate from "../templates";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
-import VideoBackground from "../components/Home/VideoBackground";
-import TwitterTimeline from "../components/TwitterTimeline";
+// import VideoBackground from "../components/Home/VideoBackground";
+// import TwitterTimeline from "../components/TwitterTimeline";
 import Hero from "../components/hurry-up/hero";
+import HeaderSectionWithStats from "../components/marketing/HeaderSectionWithStats";
+import LogosSection from "../components/marketing/LogosSection";
+import TestimonialSection from "../components/marketing/TestimonialSection";
 
 import projects from "../data/projects";
+import ContactForm from "../components/ContactForm";
 
 // TODO: Move. Need a place for reusable css styles
 const mediaQueries = {
@@ -66,8 +69,11 @@ function HomePage() {
   // }, []);
 
   return (
-    <DefaultLayout>
+    <DefaultTemplate>
       <Hero />
+      <LogosSection />
+      <HeaderSectionWithStats />
+
       {/* Intro Section */}
       {/* Overflow hidden. Quick fix for <VideoBackground> overflowing */}
       {/* <section id="intro" className={css(styles.section)}>
@@ -75,43 +81,34 @@ function HomePage() {
         </VideoBackground>
       </section> */}
 
+      {/* Projects Section */}
+      <section id="#projects" className={css(styles.section) + ' my-8 md:my-16'}>
+        <h1 className='mx-3 my-12 text-5xl font-bold'>Work</h1>
+        <Projects projects={projects} />
+      </section>
+
       {/* Skills section */}
       <section id="#skills" className={css(styles.section)}>
-        <Typography
-            use="headline3"
-            tag="h1"
-            className={css(styles.sectionHeader)}
-          >
-            Skills
-        </Typography>
+      <h1 className='mx-3 my-12 text-5xl font-bold'>Skills</h1>
         <Skills />
       </section>
 
-      {/* Projects Section */}
-      <section id="#projects" className={css(styles.section)}>
-        <Typography
-          use="headline3"
-          tag="h1"
-          className={css(styles.sectionHeader)}
-        >
-          Work
-        </Typography>
-        <Projects projects={projects} />
-      </section>
+      <TestimonialSection />
+
+      {/* Contact Section */}
+      {/* <section className="p-8">
+        <ContactForm />
+      </section> */}
 
       {/* Twitter Section */}
       {/* <section id="#twitter" className={css(styles.section)}>
         <TwitterTimeline />
       </section> */}
-    </DefaultLayout>
+    </DefaultTemplate>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionHeader: {
-    margin: "0 1rem", // Adjusted projects header for border-radius of projects
-    marginBottom: "2rem", // For section headers (not just projects header, but that was the only one when I styled it)
-  },
   // Sections of this page
   section: {
     // TODO: Side padded section, but should be page padding?
