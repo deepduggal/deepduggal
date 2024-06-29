@@ -1,8 +1,8 @@
 import Container from "./container";
-const heroImg = "/img/hero.png";
+const heroImg = "/img/web-design.png";
 
-const heading = 'Professional Web Development By Deep Duggal';
-const shortDescription = 'Deep develops business solutions and software in North Carolina. He collaborates with a network of expert developers, designers, business advisors, and more - to create a custom solution for your business.';
+const heading = 'Modern Websites By Deep Duggal';
+const shortDescription = 'Deep develops business solutions and software in North Carolina. He specializes in the latest web technologies. Deep can create a custom solution for your business.';
 
 const Hero = () => {
   return (
