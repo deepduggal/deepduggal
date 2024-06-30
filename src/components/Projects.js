@@ -2,6 +2,7 @@ import React, { memo, useEffect, useRef } from "react";
 import { StyleSheet, css } from "aphrodite";
 import { Elevation } from "@rmwc/elevation";
 import gsap from "gsap";
+import '../animations/gradient-border.css'
 
 import PropTypes from "prop-types";
 
@@ -16,16 +17,11 @@ const mediaQueries = {
 const projectStyles = StyleSheet.create({
   project: {
     [mediaQueries.sm]: {
-      display: "flex",
-      position: "relative",
       minHeight: "calc(350px - 1rem)",
       maxHeight: "calc(90vh - 2rem)",
-      margin: "0 1rem 1rem 1rem",
       width: "calc(100% - 2rem)",
-      flex: "1 1 auto",
+      margin: '0 1rem 1rem 1rem',
       // maxHeight: '100vh', // Limit height @todo on mobile, bc it'll look good.
-      borderRadius: "1rem",
-      overflow: "hidden",
       // transition: 'transform .2s ease-in-out',
       // // transform: 'scale(1.2)',
 
@@ -76,7 +72,7 @@ const Project = memo(function Project({ name, img, alt, liveUrl }) {
 
   return (
     <Elevation
-      className={"project " + css(projectStyles.project)}
+      className={`project flex relative justify-evenly rounded-xl overflow-hidden ${css(projectStyles.project)}`}
       z={10}
       key={name}
       tag="a"
@@ -90,6 +86,10 @@ const Project = memo(function Project({ name, img, alt, liveUrl }) {
         src={img}
         alt={alt}
       />
+      <div class="absolute p-4 bottom-0 text-neutral-100 bg-opacity-85 bg-blue-600 w-full">
+        <h3 class="font-bold text-2xl mb-2">{name}</h3>
+        <p class="text-neutral-300">{alt}</p>
+      </div>
     </Elevation>
   );
 });
