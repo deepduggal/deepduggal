@@ -2,7 +2,7 @@ import React, { memo, useEffect, useRef } from "react";
 import { StyleSheet, css } from "aphrodite";
 import { Elevation } from "@rmwc/elevation";
 import gsap from "gsap";
-import '../animations/gradient-border.css'
+import '../animations/gradient.css'
 
 import PropTypes from "prop-types";
 
@@ -72,7 +72,7 @@ const Project = memo(function Project({ name, img, alt, liveUrl }) {
 
   return (
     <Elevation
-      className={`project flex relative justify-evenly rounded-xl overflow-hidden ${css(projectStyles.project)}`}
+      className={`project gradient-border flex relative justify-evenly rounded-xl overflow-hidden ${css(projectStyles.project)}`}
       z={10}
       key={name}
       tag="a"
@@ -86,7 +86,7 @@ const Project = memo(function Project({ name, img, alt, liveUrl }) {
         src={img}
         alt={alt}
       />
-      <div class="absolute p-4 bottom-0 text-neutral-100 bg-opacity-85 bg-blue-600 w-full">
+      <div class="bg-neutral-900 absolute p-4 bottom-0 text-neutral-100 bg-opacity-90 w-full">
         <h3 class="font-bold text-2xl mb-2">{name}</h3>
         <p class="text-neutral-300">{alt}</p>
       </div>
