@@ -9,7 +9,7 @@ const navigation = [
   "Blog",
 ];
 const legal = ["Terms", "Privacy", "Legal"];
-const footerText = 'Deep develops business solutions and software in North Carolina. He collaborates with a network of expert developers, designers, business advisors, and more - to create a custom solution for your business.';
+const footerText = 'Deep develops business solutions and software in North Carolina. He specializes in the latest web technologies. Deep can create a custom solution for your business.';
 
 export default function Footer() {
   return (
