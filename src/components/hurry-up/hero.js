@@ -1,8 +1,10 @@
 import Container from "./container";
+import aboutData from '../../data/about.js';
 const heroImg = "/img/web-design.png";
 
-const heading = 'Modern Websites By Deep Duggal';
-const shortDescription = 'Deep develops business solutions and software in North Carolina. He specializes in the latest web technologies. Deep can create a custom solution for your business.';
+
+const heading = aboutData.title;
+const shortDescription = aboutData.shortDescription;
 
 const Hero = () => {
   return (
@@ -20,9 +22,9 @@ const Hero = () => {
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="#contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                // target="_blank"
+                // rel="noopener noreferrer"
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-brand-blue rounded-md ">
                 Get In Touch
               </a>
               {/* START SUBTITLE GITHUB LINK */}
@@ -67,7 +69,7 @@ const Hero = () => {
       {/* <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">2000+</span>{" "}
+            Trusted by <span className="text-brand-blue">2000+</span>{" "}
             customers worldwide
           </div>
 

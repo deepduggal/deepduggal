@@ -1,6 +1,6 @@
 import React /* , { useEffect } */ from "react";
 import { StyleSheet, css } from "aphrodite";
-import DefaultTemplate from "../templates";
+import DefaultTemplate from "../templates/index.js";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 

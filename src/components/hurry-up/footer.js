@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./container";
+import aboutData from "../../data/about";
 
 const navigation = [
   "Product",
@@ -9,7 +10,9 @@ const navigation = [
   "Blog",
 ];
 const legal = ["Terms", "Privacy", "Legal"];
-const footerText = 'Deep develops business solutions and software in North Carolina. He specializes in the latest web technologies. Deep can create a custom solution for your business.';
+
+const name = aboutData.name;
+const shortDescription = aboutData.shortDescription;
 
 export default function Footer() {
   return (
@@ -19,20 +22,20 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div>
               {" "}
-              <a href="/" className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-600">
+              <a href="/" className="flex items-center space-x-2 text-2xl font-medium text-brand-blue dark:text-gray-600">
                     <img
-                      src="/img/logo.svg"
+                      src="/img/deep-duggal-branding/DLogo.svg"
                       alt="D Logo"
                       width="32"
                       height="32"
                       className="w-8"
                     />
-                  <span>Deep Duggal</span>
+                  <span>{name}</span>
               </a>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            {footerText}
+            {shortDescription}
             </div>
           </div>
 
@@ -40,7 +43,7 @@ export default function Footer() {
           {/* <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <a key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">                 
+                <a key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-brand-blue focus:text-brand-blue focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">                 
                     {item}
                 </a>
               ))}
@@ -50,7 +53,7 @@ export default function Footer() {
           {/* <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
-                <a key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">      
+                <a key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-brand-blue focus:text-brand-blue focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">      
                     {item}
                 </a>
               ))}
@@ -91,7 +94,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright &copy; Deep Duggal {new Date().getFullYear()}
         </div>

@@ -38,7 +38,7 @@ export default function Example() {
           />
           <img
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="/assets/logo/5-3-2023-DLogo.svg"
+            src="/img/deep-duggal-branding/DLogo.svg"
             alt="Filler"
             width={158}
             height={48}
