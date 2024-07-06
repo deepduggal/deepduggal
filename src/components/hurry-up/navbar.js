@@ -65,7 +65,7 @@ const Navbar = () => {
                         {item}
                       </a>
                     ))}
-                    <a href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-brand-blue rounded-md lg:ml-5">
+                    <a href="#contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-brand-blue rounded-md lg:ml-5">
                       Get Started
                     </a>
                   </>

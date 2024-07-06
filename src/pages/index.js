@@ -13,6 +13,7 @@ import TestimonialSection from "../components/marketing/TestimonialSection";
 
 import projects from "../data/projects";
 import ContactForm from "../components/ContactForm";
+import { Icon } from "rmwc";
 
 // TODO: Move. Need a place for reusable css styles
 const mediaQueries = {
@@ -22,6 +23,8 @@ const mediaQueries = {
 };
 // import gsap from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const sectionStyle = 'mb-8 px-4 md:px-8';
 
 function HomePage() {
   // useEffect(() => {
@@ -82,21 +85,23 @@ function HomePage() {
       </section> */}
 
       {/* Projects Section */}
-      <section id="#projects" className={css(styles.section) + ' my-8 md:my-16'}>
-        <h1 className='mx-3 my-12 text-5xl font-bold'>Work</h1>
+      <section id="#projects" className={`${sectionStyle} my-8 md:my-16`}>
+        <h1 className='mx-3 my-12 text-5xl font-bold uppercase text-center'>Work</h1>
+        <div className="text-center mb-10 p-4"><Icon className='text-4xl' icon="construction"/></div>
         <Projects projects={projects} />
       </section>
 
       {/* Skills section */}
-      <section id="#skills" className={css(styles.section)}>
-      <h1 className='mx-3 my-12 text-5xl font-bold'>Skills</h1>
+      <section id="#skills" className={`${sectionStyle} bg-brand-blue py-8 lg:py-16`}>
+        <h1 className='mx-3 my-12 text-5xl font-bold uppercase text-center text-neutral-100'>Skills</h1>
+        <div className="text-center mb-10 p-4"><Icon className='text-white text-4xl' icon="psychology"/></div>
         <Skills />
       </section>
 
       <TestimonialSection />
 
       {/* Contact Section */}
-      {/* <section className="p-8">
+      {/* <section id="contactForm" className="p-8">
         <ContactForm />
       </section> */}
 
@@ -107,6 +112,7 @@ function HomePage() {
     </DefaultTemplate>
   );
 }
+
 
 const styles = StyleSheet.create({
   // Sections of this page

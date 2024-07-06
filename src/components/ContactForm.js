@@ -4,8 +4,8 @@ import React from 'react'
 export default function ContactForm() {
   return (
     <div className="md:p-4 lg:p-8">
-      <h1 className="text-2xl mb-4">Contact Me</h1>
-      <form className="flex flex-col" action="mailto:duggald14+deepswebsite@gmail.com" method="POST" enctype="multipart/form-data">
+      <h1 className="text-2xl mb-4">Contact Deep</h1>
+      <form id="contact" className="flex flex-col" action="mailto:duggald14+deepswebsite@gmail.com" method="POST" enctype="multipart/form-data">
         <label htmlFor="name">Name</label>
         <input className="mb-4 p-2 rounded-md bg-slate-600 text-white" placeholder="Name" type="text" id="name" name="name" required/>
         <label htmlFor="email">Email</label>
