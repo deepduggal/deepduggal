@@ -4,6 +4,7 @@ import DefaultTemplate from "../templates/index.js";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
+
 // import VideoBackground from "../components/Home/VideoBackground";
 // import TwitterTimeline from "../components/TwitterTimeline";
 import Hero from "../components/hurry-up/hero";
@@ -14,6 +15,7 @@ import TestimonialSection from "../components/marketing/TestimonialSection";
 import projects from "../data/projects";
 import ContactForm from "../components/ContactForm";
 import { Icon } from "rmwc";
+import { Sparkles } from "lucide-react";
 
 // TODO: Move. Need a place for reusable css styles
 const mediaQueries = {
@@ -92,10 +94,24 @@ function HomePage() {
       </section>
 
       {/* Skills section */}
-      <section id="#skills" className={`${sectionStyle} bg-brand-blue py-8 lg:py-16`}>
-        <h1 className='mx-3 my-12 text-5xl font-bold uppercase text-center text-neutral-100'>Skills</h1>
-        <div className="text-center mb-10 p-4"><Icon className='text-white text-4xl' icon="psychology"/></div>
-        <Skills />
+      <section id="#skills" className={`w-full bg-slate-950 text-slate-100 py-12 px-4 sm:px-6 lg:px-8 font-sans antialiased min-h-screen`}>
+        <div className="max-w-7xl mx-auto space-y-8">
+          
+          {/* Header Title Section */}
+          <div className="text-center space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-widest">
+              <Sparkles className="w-3.5 h-3.5" /> Technical Expertise
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white uppercase">
+              Skills & Proficiency
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+              Categorized breakdown of modern frameworks, programming languages, backend architecture, and engineering tools.
+            </p>
+          </div>
+
+          <Skills />
+        </div>
       </section>
 
       <TestimonialSection />
