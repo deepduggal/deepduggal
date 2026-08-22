@@ -1,0 +1,3 @@
+/*! For license information please see 47433.4f18156a.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[47433],{47433:(e,c,a)=>{a.r(c),a.d(c,{__iconNode:()=>t,default:()=>l});var d=a(52034);const t=[["path",{d:"M12 3v6",key:"1holv5"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}],["path",{d:"M12 15v6",key:"a9ows0"}]],l=(0,d.A)("git-commit-vertical",t)}}]);
+//# sourceMappingURL=47433.4f18156a.chunk.js.map

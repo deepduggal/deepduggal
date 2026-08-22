@@ -1,0 +1,3 @@
+/*! For license information please see 70543.c70f4123.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[70543],{70543:(e,s,d)=>{d.r(s),d.d(s,{__iconNode:()=>a,default:()=>c});var o=d(52034);const a=[["path",{d:"M2 16s9-15 20-4C11 23 2 8 2 8",key:"h4oh4o"}]],c=(0,o.A)("fish-symbol",a)}}]);
+//# sourceMappingURL=70543.c70f4123.chunk.js.map

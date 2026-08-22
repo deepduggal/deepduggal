@@ -1,0 +1,3 @@
+/*! For license information please see 53398.d43c4b7c.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[53398],{53398:(a,e,d)=>{d.r(e),d.d(e,{__iconNode:()=>p,default:()=>h});var c=d(52034);const p=[["path",{d:"M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1",key:"ns4c3b"}],["path",{d:"m12 15 5 6H7Z",key:"14qnn2"}]],h=(0,c.A)("airplay",p)}}]);
+//# sourceMappingURL=53398.d43c4b7c.chunk.js.map

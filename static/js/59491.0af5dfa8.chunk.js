@@ -1,0 +1,3 @@
+/*! For license information please see 59491.0af5dfa8.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[59491],{59491:(e,o,a)=>{a.r(o),a.d(o,{__iconNode:()=>n,default:()=>d});var c=a(52034);const n=[["polygon",{points:"12 2 19 21 12 17 5 21 12 2",key:"x8c0qg"}]],d=(0,c.A)("navigation-2",n)}}]);
+//# sourceMappingURL=59491.0af5dfa8.chunk.js.map

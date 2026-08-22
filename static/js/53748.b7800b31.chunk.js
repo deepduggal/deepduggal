@@ -1,0 +1,3 @@
+/*! For license information please see 53748.b7800b31.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[53748],{53748:(e,a,d)=>{d.r(a),d.d(a,{__iconNode:()=>t,default:()=>u});var c=d(52034);const t=[["path",{d:"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z",key:"17jzev"}]],u=(0,c.A)("thermometer",t)}}]);
+//# sourceMappingURL=53748.b7800b31.chunk.js.map

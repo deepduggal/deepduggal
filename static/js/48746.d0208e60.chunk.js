@@ -1,0 +1,3 @@
+/*! For license information please see 48746.d0208e60.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[48746],{48746:(e,a,d)=>{d.r(a),d.d(a,{__iconNode:()=>s,default:()=>c});var u=d(52034);const s=[["path",{d:"M6 11h8a4 4 0 0 0 0-8H9v18",key:"18ai8t"}],["path",{d:"M6 15h8",key:"1y8f6l"}]],c=(0,u.A)("russian-ruble",s)}}]);
+//# sourceMappingURL=48746.d0208e60.chunk.js.map

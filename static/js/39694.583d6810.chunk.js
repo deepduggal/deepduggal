@@ -1,0 +1,3 @@
+/*! For license information please see 39694.583d6810.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[39694],{39694:(a,e,d)=>{d.r(e),d.d(e,{__iconNode:()=>h,default:()=>k});var p=d(52034);const h=[["path",{d:"M11 2h2",key:"isr7bz"}],["path",{d:"m14.28 14-4.56 8",key:"4anwcf"}],["path",{d:"m21 22-1.558-4H4.558",key:"enk13h"}],["path",{d:"M3 10v2",key:"w8mti9"}],["path",{d:"M6.245 15.04A2 2 0 0 1 8 14h12a1 1 0 0 1 .864 1.505l-3.11 5.457A2 2 0 0 1 16 22H4a1 1 0 0 1-.863-1.506z",key:"pouggg"}],["path",{d:"M7 2a4 4 0 0 1-4 4",key:"78s8of"}],["path",{d:"m8.66 7.66 1.41 1.41",key:"1vaqj8"}]],k=(0,p.A)("solar-panel",h)}}]);
+//# sourceMappingURL=39694.583d6810.chunk.js.map

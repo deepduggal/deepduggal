@@ -1,0 +1,3 @@
+/*! For license information please see 31096.04b9074c.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[31096],{31096:(e,a,d)=>{d.r(a),d.d(a,{__iconNode:()=>h,default:()=>s});var c=d(52034);const h=[["path",{d:"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z",key:"3c2336"}],["path",{d:"M9 16h5",key:"1syiyw"}],["path",{d:"M9 12h5a2 2 0 1 0 0-4h-3v9",key:"1ge9c1"}]],s=(0,c.A)("badge-russian-ruble",h)}}]);
+//# sourceMappingURL=31096.04b9074c.chunk.js.map

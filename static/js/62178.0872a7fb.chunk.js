@@ -1,0 +1,3 @@
+/*! For license information please see 62178.0872a7fb.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[62178],{62178:(e,a,d)=>{d.r(a),d.d(a,{__iconNode:()=>k,default:()=>p});var o=d(52034);const k=[["path",{d:"M6.87 6.87a8 8 0 1 0 11.26 11.26",key:"3on8tj"}],["path",{d:"M19.9 14.25a8 8 0 0 0-9.15-9.15",key:"15ghsc"}],["path",{d:"m22 6-3-3",key:"1opdir"}],["path",{d:"M6.26 18.67 4 21",key:"yzmioq"}],["path",{d:"m2 2 20 20",key:"1ooewy"}],["path",{d:"M4 4 2 6",key:"1ycko6"}]],p=(0,o.A)("alarm-clock-off",k)}}]);
+//# sourceMappingURL=62178.0872a7fb.chunk.js.map

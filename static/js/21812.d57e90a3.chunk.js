@@ -1,0 +1,3 @@
+/*! For license information please see 21812.d57e90a3.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[21812],{21812:(a,e,d)=>{d.r(e),d.d(e,{__iconNode:()=>l,default:()=>p});var c=d(52034);const l=[["path",{d:"M10.83 2.38a2 2 0 0 1 2.34 0l8 5.74a2 2 0 0 1 .73 2.25l-3.04 9.26a2 2 0 0 1-1.9 1.37H7.04a2 2 0 0 1-1.9-1.37L2.1 10.37a2 2 0 0 1 .73-2.25z",key:"2hea0t"}]],p=(0,c.A)("pentagon",l)}}]);
+//# sourceMappingURL=21812.d57e90a3.chunk.js.map

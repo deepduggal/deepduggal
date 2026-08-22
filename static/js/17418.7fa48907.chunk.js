@@ -1,0 +1,3 @@
+/*! For license information please see 17418.7fa48907.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[17418],{17418:(a,e,d)=>{d.r(e),d.d(e,{__iconNode:()=>u,default:()=>o});var c=d(52034);const u=[["path",{d:"M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2",key:"57tc96"}]],o=(0,c.A)("audio-waveform",u)}}]);
+//# sourceMappingURL=17418.7fa48907.chunk.js.map

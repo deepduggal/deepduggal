@@ -1,0 +1,3 @@
+/*! For license information please see 21845.abeafb09.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkdeepduggal_com=self.webpackChunkdeepduggal_com||[]).push([[21845],{21845:(e,a,d)=>{d.r(a),d.d(a,{__iconNode:()=>h,default:()=>p});var c=d(52034);const h=[["path",{d:"M3 3v16a2 2 0 0 0 2 2h16",key:"c24i48"}],["path",{d:"M3 11a10 10 0 0 1 10 10",key:"jhvw44"}]],p=(0,c.A)("angle",h)}}]);
+//# sourceMappingURL=21845.abeafb09.chunk.js.map
