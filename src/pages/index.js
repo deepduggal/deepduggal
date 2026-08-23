@@ -87,10 +87,10 @@ function HomePage() {
       </section> */}
 
       {/* Projects Section */}
-      <section id="#projects" className={`${sectionStyle} my-8 md:my-16`}>
-        <h1 className='mx-3 my-12 text-5xl font-bold uppercase text-center'>Work</h1>
-        <div className="text-center mb-10 p-4"><Icon className='text-4xl' icon="construction"/></div>
-        <Projects projects={projects} />
+      <section id="#projects" className="w-full bg-slate-950 text-slate-100 py-12 px-3 sm:px-6 lg:px-8 font-sans antialiased min-h-screen">
+        <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
+          <Projects projects={projects} />
+        </div>
       </section>
 
       {/* Skills section */}
