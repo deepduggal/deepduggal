@@ -40,9 +40,10 @@ const Navbar = () => {
           {/* Navigation Links */}
           <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300 dark-target-sub">
               <a href="##projects" class="hover:text-blue-400 transition">Selected Work</a>
+               <a href="##skills" class="hover:text-blue-400 transition">Skills</a>
               {/* <a href="#capabilities" class="hover:text-blue-400 transition">Capabilities</a> */}
               {/* <a href="#impact" class="hover:text-blue-400 transition">Case Metrics</a> */}
-              <a href="#about" class="hover:text-blue-400 transition">About</a>
+              {/* <a href="#about" class="hover:text-blue-400 transition">About</a> */}
           </nav>
 
           {/* Call to Action Button */}
