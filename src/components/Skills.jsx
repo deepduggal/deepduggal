@@ -98,7 +98,7 @@ const TechIcon = ({ name, className = "w-6 h-6" }) => {
     )
   };
 
-  return icons[name.toLowerCase()] || <DynamicIcon name={name.toLowerCase()} /> || <Code2 className={`${className} text-blue-400`} />;
+  return icons[name.toLowerCase()] || <DynamicIcon name={name.toLowerCase()} color={'red'} /> || <Code2 className={`${className} text-blue-400`} />;
 };
 
 // Complete Dataset based on your original skills list with categories & visual meter levels
@@ -107,7 +107,8 @@ const DEFAULT_SKILL_CATEGORIES = [
   { id: 'frontend', label: 'Front-End' },
   { id: 'backend', label: 'Back-End' },
   { id: 'devops', label: 'DevOps & Testing' },
-  { id: 'practices', label: 'Engineering Practices' }
+  { id: 'practices', label: 'Engineering Practices' },
+  { id: 'cybersecurity', label: 'Cybersecurity' }
 ];
 
 const SKILLS_DATA = [
@@ -240,6 +241,42 @@ const SKILLS_DATA = [
     percent: 86,
     color: 'from-sky-500 to-blue-600'
   },
+  {
+    category: 'backend',
+    categoryTitle: 'BACK-END & DATABASES',
+    name: 'Python',
+    iconKey: 'file-code',
+    level: 'Advanced',
+    percent: 86,
+    color: 'from-sky-500 to-blue-600'
+  },
+  {
+    category: 'backend',
+    categoryTitle: 'BACK-END & DATABASES',
+    name: 'Java',
+    iconKey: 'file-code',
+    level: 'Advanced',
+    percent: 86,
+    color: 'from-sky-500 to-blue-600'
+  },
+  {
+    category: 'backend',
+    categoryTitle: 'BACK-END & DATABASES',
+    name: 'Linux',
+    iconKey: 'app-window-mac',
+    level: 'Advanced',
+    percent: 86,
+    color: 'from-sky-500 to-blue-600'
+  },
+  {
+    category: 'backend',
+    categoryTitle: 'BACK-END & DATABASES',
+    name: 'Command Line Interface (CLI)',
+    iconKey: 'square-terminal',
+    level: 'Advanced',
+    percent: 86,
+    color: 'from-sky-500 to-blue-600'
+  },
 
   // TESTING & DEVOPS
   {
@@ -315,7 +352,54 @@ const SKILLS_DATA = [
     level: 'Advanced',
     percent: 92,
     color: 'from-sky-400 to-blue-600'
-  }
+  },
+
+  // Cybersecurity
+  {
+    category: 'cybersecurity',
+    categoryTitle: 'CYBERSECURITY',
+    name: 'Packet Sniffing & Network Analysis',
+    iconKey: 'network',
+    level: 'Proficient',
+    percent: 75,
+    color: 'from-sky-400 to-blue-600'
+  },
+  {
+    category: 'cybersecurity',
+    categoryTitle: 'CYBERSECURITY',
+    name: 'Security Information Event Management (SIEM) tools,',
+    iconKey: 'layout-dashboard',
+    level: 'Proficient',
+    percent: 75,
+    color: 'from-sky-400 to-blue-600'
+  },
+  {
+    category: 'cybersecurity',
+    categoryTitle: 'CYBERSECURITY',
+    name: 'Intrusion Detection & Prevention Systems (IDS/IPS)',
+    iconKey: 'shield-alert',
+    level: 'Proficient',
+    percent: 75,
+    color: 'from-sky-400 to-blue-600'
+  },
+  {
+    category: 'cybersecurity',
+    categoryTitle: 'CYBERSECURITY',
+    name: 'NIST CSF',
+    iconKey: 'layout-freeform',
+    level: 'Proficient',
+    percent: 75,
+    color: 'from-sky-400 to-blue-600'
+  },
+  {
+    category: 'cybersecurity',
+    categoryTitle: 'CYBERSECURITY',
+    name: 'Incident Response',
+    iconKey: 'alert-triangle',
+    level: 'Proficient',
+    percent: 75,
+    color: 'from-sky-400 to-blue-600'
+  },
 ];
 
 // Single skill item displaying logo, title, proficiency badge, and progress bar
@@ -331,7 +415,7 @@ function SkillCardRow({ skill }) {
         {/* Name & Level */}
         <div className="min-w-0 flex-1 pr-2">
           <div className="flex items-baseline justify-between mb-1">
-            <h4 className="text-sm font-semibold text-slate-100 truncate group-hover:text-blue-300 transition-colors">
+            <h4 title={skill.name} className="text-sm font-semibold text-slate-100 truncate group-hover:text-blue-300 transition-colors">
               {skill.name}
             </h4>
             <span className="text-[10px] font-medium tracking-wider uppercase px-2 py-0.5 rounded-full bg-slate-700/60 text-slate-300 ml-2 flex-shrink-0">
@@ -340,12 +424,12 @@ function SkillCardRow({ skill }) {
           </div>
 
           {/* Visual Progress Bar */}
-          <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden p-0.5 border border-slate-700/30">
+          {/* <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden p-0.5 border border-slate-700/30">
             <div 
               className={`h-full rounded-full bg-gradient-to-r ${skill.color} transition-all duration-700 ease-out`}
               style={{ width: `${skill.percent}%` }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -44,9 +44,9 @@ const Hero = () => {
                     <span id="primaryCtaText">View Featured Work</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
-                <a href="#contact" className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold transition-all duration-200 dark-target-card flex items-center gap-2">
+                {/* <a href="#contact" className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold transition-all duration-200 dark-target-card flex items-center gap-2">
                     <span>💬 Schedule Strategy Call</span>
-                </a>
+                </a> */}
             </div>
 
             {/* <!-- Proof Strip / Micro-Trust --> */}

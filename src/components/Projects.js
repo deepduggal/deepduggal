@@ -90,7 +90,7 @@ const PROJECTS_DATA = [
     description: 'A visually stunning, responsive calculator web app built with tactile haptic feedback effects, memory functions, and history logs.',
     url: 'https://deepduggal.github.io/Sexy-Calc/src/index.html',
     fallbackImg: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Web Audio API'],
+    tags: ['HTML', 'CSS', 'JavaScript'],
     stats: {
       loadSpeed: '< 0.4s',
       conversionIncrease: '10k+ Users',
@@ -108,7 +108,7 @@ const PROJECTS_DATA = [
     description: 'Comprehensive business management software providing live inventory tracking, automated quote estimations, and streamlined accounting workflows.',
     url: 'https://deepstodoapp.surge.sh/',
     fallbackImg: 'https://images.unsplash.com/photo-1542744094-3a31216994c5?auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'Node.js', 'MongoDB', 'Cloud Firestore'],
+    tags: ['React', 'JavaScript'],
     stats: {
       loadSpeed: '< 1.2s',
       conversionIncrease: '+210%',
