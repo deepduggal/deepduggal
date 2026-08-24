@@ -34,7 +34,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+            <div className="max-w-md mt-4 text-white">
             {shortDescription}
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        <div className="my-10 text-sm text-center text-white">
           Copyright &copy; Deep Duggal {new Date().getFullYear()}
         </div>
       </Container>
