@@ -237,7 +237,7 @@ function WorkSection() {
       case 'mobile': return 'w-[360px] h-[640px] rounded-[32px] border-[8px] border-slate-800 shadow-2xl';
       case 'tablet': return 'w-[720px] h-[580px] rounded-2xl border-4 border-slate-800 shadow-xl';
       case 'desktop':
-      default: return 'w-full min-w-[800px] md:min-w-0 h-[560px] rounded-xl';
+      default: return 'w-full min-w-0 md:min-w-[800px] h-[560px] rounded-xl';
     }
   };
 

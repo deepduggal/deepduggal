@@ -13,12 +13,12 @@ import PropTypes from "prop-types";
 
 function DefaultTemplate({ children }) {
   return (
-    <div className={"animated fadeIn " + css(styles.defaultTemplate)}>
+    <div className={"animated fadeIn bg-slate-950 text-slate-100 font-sans transition-colors duration-300 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white" + css(styles.defaultTemplate)}>
       {/* Navigation (& Logo) */}
       {/* <Navbar navLinks={navLinks} /> */}
       <Navbar />
       {/* Main Content */}
-      <main className="min-h-full w-full">{children}</main>
+      <main className="relative z-10 my-auto py-8 px-6 max-w-7xl mx-auto w-full">{children}</main>
       {/* Footer */}
       <Footer />
     </div>

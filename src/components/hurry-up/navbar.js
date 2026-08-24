@@ -13,88 +13,46 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between">
-        {/* Logo  */}
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <a href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-brand-blue dark:text-gray-600">
-                    <span>
-                      <img
-                        src="/img/deep-duggal-branding/DLogo.svg"
-                        alt="DD logo"
-                        width="32"
-                        height="32"
-                        className="w-8"
-                      />
-                    </span>
-                    <span>{companyName}</span>
+    <>
+      {/* <!-- Main Navigation Bar --> */}
+      <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-20">
+          {/* Logo, Title, Subtitle */}
+          <div class="flex items-center gap-3">
+              <a href="/">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-brand-blue dark:text-gray-600">
+                  <span>
+                    <img
+                      src="/img/deep-duggal-branding/DLogo.svg"
+                      alt="DD logo"
+                      width="32"
+                      height="32"
+                      className="w-8"
+                    />
                   </span>
-                </a>
+                  <div>
+                      <span class="font-bold text-lg tracking-tight text-slate-100 dark-target">{companyName}</span>
+                      <span class="text-xs text-blue-400 block font-mono">Full-Stack Engineer</span>
+                  </div>
+                </span>
+              </a>
+          </div>
 
-                <Disclosure.Button
-                  aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-brand-blue focus:text-brand-blue focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
-                  <svg
-                    className="w-6 h-6 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    {open && (
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                      />
-                    )}
-                    {!open && (
-                      <path
-                        fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    )}
-                  </svg>
-                </Disclosure.Button>
+          {/* Navigation Links */}
+          <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300 dark-target-sub">
+              <a href="##projects" class="hover:text-blue-400 transition">Selected Work</a>
+              {/* <a href="#capabilities" class="hover:text-blue-400 transition">Capabilities</a> */}
+              {/* <a href="#impact" class="hover:text-blue-400 transition">Case Metrics</a> */}
+              <a href="#about" class="hover:text-blue-400 transition">About</a>
+          </nav>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <a key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-brand-blue focus:text-brand-blue focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-                        {item}
-                      </a>
-                    ))}
-                    <a href="#contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-brand-blue rounded-md lg:ml-5">
-                      Get Started
-                    </a>
-                  </>
-                </Disclosure.Panel>
-              </div>
-            </>
-          )}
-        </Disclosure>
-
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <a href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-brand-blue focus:text-brand-blue focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                  {menu}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <a href="#contact" className="px-6 py-2 text-white bg-brand-blue rounded-md md:ml-5">
-            Get Started
-          </a>
-        </div>
-      </nav>
-    </div>
+          {/* Call to Action Button */}
+          <div class="flex items-center gap-3">
+              <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-md shadow-blue-600/20 transition-all duration-200">
+                  Let's Talk
+              </a>
+          </div>
+      </header>
+    </>
   );
 }
 

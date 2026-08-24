@@ -8,7 +8,6 @@ import Skills from "../components/Skills";
 // import VideoBackground from "../components/Home/VideoBackground";
 // import TwitterTimeline from "../components/TwitterTimeline";
 import Hero from "../components/hurry-up/hero";
-import HeaderSectionWithStats from "../components/marketing/HeaderSectionWithStats";
 import LogosSection from "../components/marketing/LogosSection";
 import TestimonialSection from "../components/marketing/TestimonialSection";
 
@@ -77,7 +76,6 @@ function HomePage() {
     <DefaultTemplate>
       <Hero />
       <LogosSection />
-      <HeaderSectionWithStats />
 
       {/* Intro Section */}
       {/* Overflow hidden. Quick fix for <VideoBackground> overflowing */}

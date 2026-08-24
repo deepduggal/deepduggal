@@ -9,61 +9,64 @@ const shortDescription = aboutData.shortDescription;
 const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
-              {heading}
-            </h1>
-            <p className="py-5 text-xl leading-normal light:text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-500">
-              {shortDescription}
-            </p>
+      {/* <!-- Background Ambient Lights --> */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] max-w-[80vw] h-[350px] bg-blue-600/15 blur-[120px] rounded-full -z-10 pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-[300px] max-w-[45vw] h-[300px] bg-purple-500/10 blur-[100px] rounded-full -z-10 pointer-events-none" />
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="#contact"
-                // target="_blank"
-                // rel="noopener noreferrer"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-brand-blue rounded-md ">
-                Get In Touch
-              </a>
-              {/* START SUBTITLE GITHUB LINK */}
-              {/* <a
-                href="#contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
-                <svg
-                  role="img"
-                  width="24"
-                  height="24"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <title>GitHub</title>
-                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                </svg>
-                <span> It's easy. I'm nice.</span>
-              </a> */}
-              {/* END SUBTITLE GITHUB LINK */}
+      <div className="grid lg:grid-cols-12 gap-12 items-center">
+        {/* <!-- Left Column: Copy & CTAs --> */}
+          <div className="lg:col-span-12 space-y-8">
+              
+              {/* <!-- Availability & Location Badge --> */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-slate-300 dark-target-card">
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span id="badgeLocation">Based in Raleigh, NC</span>
+                <span class="text-slate-600">•</span>
+                <span id="badgeStatus" class="text-blue-400">Available for Select Projects</span>
             </div>
-          </div>
+
+            {/* <!-- Main Dynamic Headline --> */}
+                <div className="space-y-4">
+                <h1 id="heroHeadline" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-100 dark-target transition-all duration-300">
+                    High-Performance Web Solutions Built to <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Scale Your Business</span>
+                </h1>
+                <p id="heroSubline" className="text-lg text-slate-400 max-w-2xl leading-relaxed dark-target-sub transition-all duration-300">
+                    I help companies turn complex technical challenges into ultra-fast, conversion-focused web applications. Engineered for performance, security, and effortless growth.
+                </p>
+            </div>
+
+            {/* <!-- Call to Actions --> */}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <a href="##projects" className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2">
+                    <span id="primaryCtaText">View Featured Work</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <a href="#contact" className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold transition-all duration-200 dark-target-card flex items-center gap-2">
+                    <span>💬 Schedule Strategy Call</span>
+                </a>
+            </div>
+
+            {/* <!-- Proof Strip / Micro-Trust --> */}
+            <div className="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-left dark-target-border">
+              <div>
+                <div id="stat1Val" className="text-2xl sm:text-3xl font-bold text-slate-100 font-mono dark-target">6+</div>
+                <div id="stat1Lbl" className="text-xs text-slate-400 mt-1">Years Engineering Experience</div>
+              </div>
+              <div>
+                <div id="stat2Val" className="text-2xl sm:text-3xl font-bold text-emerald-400 font-mono">&gt;50%</div>
+                <div id="stat2Lbl" className="text-xs text-slate-400 mt-1">Avg Page Load Acceleration</div>
+              </div>
+              <div>
+                <div id="stat3Val" className="text-2xl sm:text-3xl font-bold text-blue-400 font-mono">100%</div>
+                <div id="stat3Lbl" className="text-xs text-slate-400 mt-1">Custom Architecture & Code</div>
+              </div>
+            </div>
+
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <img
-              src={heroImg}
-              width="616"
-              height="617"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
-        </div>
-      </Container>
+      </div>
 
       {/* START TRUST LOGO SECTION */}
       {/* <Container>
