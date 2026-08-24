@@ -1,3 +1,5 @@
+import { Sparkles } from "lucide-react";
+
 const logoImg = '/external_logos/McK-RGB-McK-Logo-4CMYK.png';
 const logoAlt = 'Mckesson logo';
 const quote = "Deep and I worked together on one big critical for company project for McKesson. Deep’s responsibility were Front End changes for client face ordering application (with 100k accounts with list of users for each account). He played a significant role, often, in deploying and implementing web strategies, and dealt with the details with the details along with the bigger picture. He has good code skills and strategy view. Deep is a good team player who can also work independently and do a fantastic job.";
@@ -9,6 +11,11 @@ const quotedPersonImgAlt = 'Natalia Puchkova';
 export default function TestimonialSection() {
   return (
     <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="text-center space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 my-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-widest">
+              <Sparkles className="w-3.5 h-3.5" /> Testimonial
+            </div>
+      </div>
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
       <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-brand-blue/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
