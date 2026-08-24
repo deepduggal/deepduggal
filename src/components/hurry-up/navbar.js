@@ -47,8 +47,8 @@ const Navbar = () => {
 
           {/* Call to Action Button */}
           <div class="flex items-center gap-3">
-              <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-md shadow-blue-600/20 transition-all duration-200">
-                  Let's Talk
+              <a href="https://www.linkedin.com/in/deepduggal/" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-md shadow-blue-600/20 transition-all duration-200">
+                  Let's Talk (LinkedIn)
               </a>
           </div>
       </header>
